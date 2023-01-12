@@ -131,7 +131,7 @@ public class Activity_Pou_Login extends AppCompatActivity implements View.OnClic
                         data_passwordPou = login_passwordPou.getText().toString();
 
                         // Login del Pou satisfactorio. Nos dirigimos al menú principal.
-                        StyleableToast.makeText(Activity_Pou_Login.this, "¡Has accedido correctamente a tu Pou!", R.style.exampleToast).show();
+                        StyleableToast.makeText(Activity_Pou_Login.this, getResources().getString(R.string.toast_Login_hasAccedidoCorrectamenteATuPou), R.style.exampleToast).show();
                         // Nos vamos al Home.
                         Intent myIntent1 = new Intent(Activity_Pou_Login.this, Activity_Pou_Salon.class);
 
@@ -189,13 +189,13 @@ public class Activity_Pou_Login extends AppCompatActivity implements View.OnClic
                         break;
                     case 404:
                         // El correo no existe. Nos dirigimos al registro.
-                        StyleableToast.makeText(Activity_Pou_Login.this, "¡El 'correo' introducido no tiene ningún Pou asociado!", R.style.exampleToast).show();
+                        StyleableToast.makeText(Activity_Pou_Login.this, getResources().getString(R.string.toast_Login_elCorreoIntroducidoNoTieneNingunPouAsociado), R.style.exampleToast).show();
                         Intent myIntent2 = new Intent(Activity_Pou_Login.this, Activity_Pou_Register.class);
                         Activity_Pou_Login.this.startActivity(myIntent2);
                         break;
                     case 405:
                         // Contraseña incorrecta.
-                        StyleableToast.makeText(Activity_Pou_Login.this, "¡La 'contraseña' introducida no es la correcta!", R.style.exampleToast).show();
+                        StyleableToast.makeText(Activity_Pou_Login.this, getResources().getString(R.string.toast_Login_laPasswordIntroducidaNoEsLaCorrecta), R.style.exampleToast).show();
                         break;
                 }
             }

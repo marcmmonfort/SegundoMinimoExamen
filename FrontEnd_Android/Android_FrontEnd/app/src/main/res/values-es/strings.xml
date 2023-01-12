@@ -14,4 +14,11 @@
     <string name="hint_Name">Nombre</string>
     <string name="hint_Birthdate">Fecha de Nacimiento</string>
     <string name="hint_ConfirmPassword">Confirmar Contraseña</string>
+    <string name="toast_Login_hasAccedidoCorrectamenteATuPou">¡Has accedido correctamente a tu Pou!</string>
+    <string name="toast_Login_elCorreoIntroducidoNoTieneNingunPouAsociado">¡El Correo introducido no tiene ningún Pou asociado!</string>
+    <string name="toast_Login_laPasswordIntroducidaNoEsLaCorrecta">¡La Contraseña introducida no es la correcta!</string>
+    <string name="toast_Register_lasPasswordsNoCoinciden">¡Las contraseñas no coinciden!</string>
+    <string name="toast_Register_haNacidoTuPou">¡Enhorabuena, ha nacido tu Pou!</string>
+    <string name="toast_Register_elCorreoIntroducidoYaEstaAsociadoAUnaCuenta">¡El Correo introducido ya está asociado a una cuenta!</string>
+    <string name="toast_Register_elUsernameIntroducidoYaEstaEnUso">¡El Username introducido ya está en uso!</string>
 </resources>

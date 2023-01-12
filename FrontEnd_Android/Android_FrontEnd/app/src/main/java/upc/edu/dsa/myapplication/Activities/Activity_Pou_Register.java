@@ -77,7 +77,7 @@ public class Activity_Pou_Register extends AppCompatActivity implements View.OnC
 
         if (!registro_passwordPou.getText().toString().equals(registro_passwordPouConfirmar.getText().toString())){
             // Contraseñas diferentes. Se avisa y no se procede con el registro.
-            StyleableToast.makeText(Activity_Pou_Register.this, "¡Las contraseñas no coinciden!", R.style.exampleToast).show();
+            StyleableToast.makeText(Activity_Pou_Register.this, getResources().getString(R.string.toast_Register_lasPasswordsNoCoinciden), R.style.exampleToast).show();
 
         }
         else{
@@ -92,19 +92,19 @@ public class Activity_Pou_Register extends AppCompatActivity implements View.OnC
                     switch (respuesta.code()){
                         case 200:
                             // Pou creado satisfactoriamente. Nos dirigimos a hacer el Login.
-                            StyleableToast.makeText(Activity_Pou_Register.this, "¡Enhorabuena, ha nacido tu Pou!", R.style.exampleToast).show();
+                            StyleableToast.makeText(Activity_Pou_Register.this, getResources().getString(R.string.toast_Register_haNacidoTuPou), R.style.exampleToast).show();
                             Intent myIntent3 = new Intent(Activity_Pou_Register.this, Activity_Pou_Login.class);
                             Activity_Pou_Register.this.startActivity(myIntent3);
                             break;
                         case 404:
                             // Ya existe el correo. Nos dirigimos a hacer el Login.
-                            StyleableToast.makeText(Activity_Pou_Register.this, "¡El 'correo' introducido ya está asociado a una cuenta!", R.style.exampleToast).show();
+                            StyleableToast.makeText(Activity_Pou_Register.this, getResources().getString(R.string.toast_Register_elCorreoIntroducidoYaEstaAsociadoAUnaCuenta), R.style.exampleToast).show();
                             Intent myIntent2 = new Intent(Activity_Pou_Register.this, Activity_Pou_Login.class);
                             Activity_Pou_Register.this.startActivity(myIntent2);
                             break;
                         case 405:
                             // Ya existe el PouID.
-                            StyleableToast.makeText(Activity_Pou_Register.this, "¡El 'username' introducido ya está en uso!", R.style.exampleToast).show();
+                            StyleableToast.makeText(Activity_Pou_Register.this, getResources().getString(R.string.toast_Register_elUsernameIntroducidoYaEstaEnUso), R.style.exampleToast).show();
                             break;
                     }
                 }
