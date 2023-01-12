@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="splash_screen_cargando">Carregant ...</string>
+    <string name="lasaventurasde">LES AVENTURES DE</string>
+    <string name="home_registrarunpou">Registrar un Pou</string>
+    <string name="home_abrirweb">Obrir la Pàgina Web</string>
+    <string name="home_login">Jugar amb el teu Pou</string>
+    <string name="lasaventurasdepou">LES AVENTURES DE POU</string>
+    <string name="login_ACCEDER">ACCEDIR</string>
+    <string name="hint_Correo">Correu</string>
+    <string name="hint_Password">Contrasenya</string>
+    <string name="hint_Username">Usuari</string>
+    <string name="hint_Name">Nom</string>
+    <string name="hint_Birthdate">Data de Naixement</string>
+    <string name="hint_ConfirmPassword">Confirmar Contrasenya</string>
+</resources>
