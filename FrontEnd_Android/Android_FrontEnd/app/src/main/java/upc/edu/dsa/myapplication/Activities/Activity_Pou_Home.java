@@ -2,9 +2,7 @@ package upc.edu.dsa.myapplication.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -16,11 +14,9 @@ import io.github.muddz.styleabletoast.StyleableToast;
 import upc.edu.dsa.myapplication.PouServices;
 import upc.edu.dsa.myapplication.R;
 
-import io.github.muddz.styleabletoast.StyleableToast;
-
 public class Activity_Pou_Home extends AppCompatActivity{
 
-    TextView textPou, textLasAventurasDe, textRegistro, textLogin, textWeb;
+    TextView textPou, textLasAventurasDe, textRegistro, textLogin, textWeb, home_languageId;
     Button botonRegistro, botonLogin, botonWeb;
 
     PouServices pouServices;

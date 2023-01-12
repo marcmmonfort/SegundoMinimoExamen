@@ -289,10 +289,26 @@ public class PouGameService {
     @Path("/pou/ranking/{rankingId}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response obtenerPousOrdenadosDescendentemente(@PathParam("rankingId") String rankingId) {
-        logger.info("LLEGA AQUÍ");
         List<Pou> listaPous = this.jvm.obtenerPousOrdenadosDescendentemente(rankingId);
         GenericEntity<List<Pou>> enviarListaPous = new GenericEntity<List<Pou>>(listaPous) {};
         return Response.status(201).entity(enviarListaPous).build();
+    }
+
+    // OPERACIÓN ANDROID 6: RECIBIMOS DE ANDROID EL IDIOMA QUE USA UN USUARIO.
+    // MÉTODO HTTP: PUT.
+    // ESTRUCTURA: -
+    // EXCEPCIONES: -
+
+    @PUT
+    @ApiOperation(value = "Comprobar el correo", notes = "-")
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "¡Hecho!"),
+    })
+    @Path("/pou/guardaridioma/{userId}/{idioma}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response guardarIdioma(@PathParam("userId") String userId, @PathParam("idioma") String idioma) {
+        logger.info("Mínimo 2 ---> El Pou con ID "+userId+" está usando el Idioma "+idioma+".");
+        return Response.status(201).build();
     }
 
 /*

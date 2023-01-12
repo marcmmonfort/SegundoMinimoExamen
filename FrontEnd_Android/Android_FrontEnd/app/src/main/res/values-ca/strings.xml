@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">My Application</string>
+    <string name="languageId">Català</string>
     <string name="splash_screen_cargando">Carregant ...</string>
     <string name="lasaventurasde">LES AVENTURES DE</string>
     <string name="home_registrarunpou">Registrar un Pou</string>

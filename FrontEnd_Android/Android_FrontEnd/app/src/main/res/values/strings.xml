@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="languageId">English</string>
     <string name="splash_screen_cargando">Loading ...</string>
     <string name="lasaventurasde">THE ADVENTURES OF</string>
     <string name="home_registrarunpou">Register a Pou</string>

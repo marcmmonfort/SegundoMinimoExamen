@@ -14,7 +14,9 @@ import org.w3c.dom.Text;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import upc.edu.dsa.myapplication.Entities.VO.InfoRegistro;
 import upc.edu.dsa.myapplication.Entities.VO.InformacionPou;
+import upc.edu.dsa.myapplication.PouRetrofit;
 import upc.edu.dsa.myapplication.PouServices;
 import upc.edu.dsa.myapplication.R;
 
@@ -85,6 +87,7 @@ public class Activity_Pou_SplashScreen extends AppCompatActivity {
 
         ss_textLasAventurasDe = findViewById(R.id.ss_textLasAventurasDe);
         ss_textLasAventurasDe.setText(R.string.lasaventurasde);
+        // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         Thread timerThread = new Thread() {
             public void run() {
@@ -96,7 +99,6 @@ public class Activity_Pou_SplashScreen extends AppCompatActivity {
                     if (isLogged) {
 
                         Intent myIntent1 = new Intent(Activity_Pou_SplashScreen.this, Activity_Pou_Salon.class);
-
 
                         myIntent1.putExtra("pasarNivelHambre",Integer.toString(lvlHambre));
                         myIntent1.putExtra("pasarNivelSalud",Integer.toString(lvlSalud));

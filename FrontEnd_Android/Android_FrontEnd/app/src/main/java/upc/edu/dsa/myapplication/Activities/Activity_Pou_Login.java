@@ -25,7 +25,7 @@ import android.content.SharedPreferences;
 
 public class Activity_Pou_Login extends AppCompatActivity implements View.OnClickListener{
 
-    TextView login_textLasAventurasDe;
+    TextView login_textLasAventurasDe, login_languageId;
     Button login_botonHacerLogin, login_backHome;
     TextInputEditText login_correoPou, login_passwordPou;
 
@@ -132,6 +132,7 @@ public class Activity_Pou_Login extends AppCompatActivity implements View.OnClic
 
                         // Login del Pou satisfactorio. Nos dirigimos al menú principal.
                         StyleableToast.makeText(Activity_Pou_Login.this, getResources().getString(R.string.toast_Login_hasAccedidoCorrectamenteATuPou), R.style.exampleToast).show();
+
                         // Nos vamos al Home.
                         Intent myIntent1 = new Intent(Activity_Pou_Login.this, Activity_Pou_Salon.class);
 
