@@ -10,25 +10,14 @@
 		---> 'Home'
 		---> 'Login'
 		---> 'Register'
-		---> ''
-		---> ''
-		---> ''
-		---> ''
-		---> ''
-		---> ''
-		---> ''
-	>> (5)  
+	>> (5) Implementación del servicio que permite pasar a API REST el idioma que está usando cada pouId.
 
 >> ¿Qué tareas quedan pendientes?
 	>> (1) Acabar de traducir las siguientes pantallas ...
-		---> ''
-		---> ''
-		---> ''
-		---> ''
-		---> ''
-		---> ''
-		---> ''
-		---> ''
-		---> ''
-		---> ''
-		---> ''
+		---> 'Salón'
+		---> 'Info'
+		---> 'Cocina'
+		---> 'Lavabo'
+		---> 'Juego'
+		---> 'Tienda'
+		---> 'Armario'
